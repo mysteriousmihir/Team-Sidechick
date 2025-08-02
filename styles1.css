@@ -1,0 +1,179 @@
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 251px;
+    background: #d5d5d5;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-slide img {
+    height: 251px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-slide img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+.header h1 span {
+    color: #ff6f61;
+    text-decoration: underline;
+    font-family: "Borel", sans-serif;
+}
+
+.class-selection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.class-selection button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.class-selection button.active {
+    background-color: #333;
+    color: #fff;
+}
+
+.study-materials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.study-material {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.study-material:hover {
+    transform: translateY(-5px);
+}
+
+.study-material img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.study-material h3 {
+    font-size: 16px;
+    color: #333;
+}
+
+/* ABOUT TEAM */
+.team {
+    background-color: black;
+    padding: 40px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius:20px ;
+    text-align: left;
+}
+
+.team h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.member {
+    position: relative;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.member:hover {
+    transform: translateY(-4px);
+
+}
+
+.member h3 {
+    color: orange;
+    font-size: 24px;
+    ;
+    margin-bottom: 5px;
+}
+
+.member p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.popup-image {
+  display: none;
+  position: absolute;
+  bottom: 110%; /* place image above the box */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  background: white;
+  padding: 6px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.popup-image img {
+  width: 180px;
+  height: auto;
+  max-height: 240px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Show popup when hovering over parent */
+.member:hover .popup-image {
+  display: block;
+  opacity: 1;
+}

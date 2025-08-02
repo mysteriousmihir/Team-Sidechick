@@ -1,0 +1,311 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #eef2ff;
+  color: #333;
+}
+#excellence{
+  text-align: left;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  width: 60px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}   
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.login-btn {
+  background-color: #8527b8;
+  color: white;
+  padding: 12px 20px;
+  border: 2PX SOLID BLACK;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Hero Section */
+.hero {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #eef2ff;
+}
+
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.hero .highlight {
+  color: #6d58ff;
+}
+
+.hero .blue {
+  color: #2d2dff;
+}
+
+.hero p {
+  font-size: 16px;
+  color: #444;
+}
+
+.chatbot-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: transparent; /* No background, just image */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.chatbot-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.chatbot-button img:hover {
+  transform: scale(1.1);
+}
+
+.feature-panel {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;  
+  background-color: #ffffff;
+  padding: 40px 60px;
+  margin: 40px auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  max-width: 1200px;
+  gap: 20px;
+}
+
+.feature-box {
+  flex: 1 1 220px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+}
+
+.feature-box img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 16px;
+}
+
+.feature-box h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.feature-box p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Basic reset */
+
+.popular-courses {
+  padding: 30px;
+  background: #fff;
+  border-radius: 20px;
+  margin: 40px auto;
+  width: 65%;
+  max-width: 1200px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.popular-courses h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #222;
+}
+
+.popular-courses h2 span {
+  background: #ffeb3b;
+  padding: 8px 20px;
+  border-radius: 25px;
+}
+
+.course-slider {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+
+.course-slider::-webkit-scrollbar {
+  height: 6px;
+}
+
+.course-slider::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.course-card {
+  min-width: 160px;
+  padding: 20px;
+  border-radius: 16px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Colors */
+.light-purple { background-color: #e8ddff; }
+.light-yellow { background-color: #ffeecc; }
+.light-green { background-color: #d4ffe2; }
+.light-pink   { background-color: #ffe1ea; }
+.light-orange { background-color: #ffeedc; }
+.light-blue   { background-color: #dceeff; }
+
+
+
+      .educator-marquee {
+  overflow: hidden;
+  background-color: #111;
+  padding: 20px 0;
+}
+
+.educator_top_text {
+  text-align:left;
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.marquee-inner {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-track {
+  display: flex;
+  animation: scrollLoop 25s linear infinite;
+}
+
+.educator-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 280px;
+  max-width: 280px;
+  height: 250px;
+  margin: 0 10px;
+  background: #222;
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.educator-card img {
+  width: 125px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-left: 15px;
+}
+
+.educator-card .info h3 {
+  font-size: 16px;
+  margin: 0;
+  color: orange;
+}
+
+.educator-card .info p {
+  font-size: 13px;
+  color: #ccc;
+  margin: 5px 0 0;
+}
+
+.educator-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  /* box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2); */
+  box-shadow: 0 0 15px 2px rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+/* Pause on hover */
+.educator-marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+
+@keyframes scrollLoop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+                  
